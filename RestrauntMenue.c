@@ -16,7 +16,7 @@ int main()
         printf("6. Cookies   - Rs. 170\n");
         printf("7. Pasta   - Rs. 220\n");
         printf("8. Noodles   - Rs. 200\n");
-        printf("9. Beer   - Rs. 110\n");
+        printf("9. Toast  - Rs. 110\n");
         printf("10. Generate Bill & Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
