@@ -7,7 +7,7 @@ int main ()
     printf(" Enter the value of n = ");
     scanf("%d" , &n);
 
-    if(n<0)
+    if(n<0) 
     {
         printf(" Value of n canout be in negative \n"); 
     }
