@@ -2,46 +2,50 @@
 int main(){
     int choice, quantity, total = 0, i, n;
     printf("\n********MENU********\n");
-    printf("1. Pizza - Rs.10\n");
-    printf("2. Burger - Rs.5\n");
-    printf("3. Pasta - Rs.7\n");
-    printf("4. Fries - Rs.3\n");
-    printf("5. Salad - Rs.4\n");
-    printf("6. Soda - Rs.2\n");
-    printf("7. Water - Rs.1\n");
-    printf("8. Exit\n");
+    printf("1. Pizza - Rs.100\n");
+    printf("2. Burger - Rs.50\n");
+    printf("3. Pasta - Rs.40\n");
+    printf("4. Fries - Rs.35\n");
+    printf("5. Salad - Rs.30\n");
+    printf("6. Soda - Rs.25\n");
+    printf("7. Water - Rs.15\n");
+    printf("8. Ice Cream - Rs.20\n");
+    printf("9. Exit\n");
     printf("************************\n");
     printf("Enter the number of dishes you want to order: ");
     scanf("%d", &n);
     for(i = 0; i < n; i++){
         printf("Enter your choice: ");
         scanf("%d", &choice);
-        if(choice == 8){
+        if(choice == 9){
             break;
         }
         printf("Enter quantity: ");
         scanf("%d", &quantity);
         switch(choice){
             case 1:
-                total += 10 * quantity;
+                total += 100 * quantity;
                 break;
             case 2:
-                total += 5 * quantity;
+                total += 50 * quantity;
                 break;
             case 3:
-                total += 7 * quantity;
+                total += 40 * quantity;
                 break;
             case 4:
-                total += 3 * quantity;
+                total += 35 * quantity;
                 break;
             case 5:
-                total += 4 * quantity;
+                total += 30 * quantity;
                 break;
             case 6:
-                total += 2 * quantity;
+                total += 25 * quantity;
                 break;
             case 7:
-                total += 1 * quantity;
+                total += 15 * quantity;
+                break;
+            case 8:
+                total += 20 * quantity;
                 break;
             default:
                 printf("Invalid choice!\n");
